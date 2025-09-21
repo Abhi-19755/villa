@@ -1,628 +1,641 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  .sub-header {
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+  }
 
-.sub-header {
-  padding: 20px 0;
-  border-bottom: 1px solid gray;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20%;
-  margin-right: 20%;
-  align-items: center;
-}
-
-.con-left > ul {
-  display: flex;
-  gap: 20px;
-  list-style-type: none;
-}
-
-.con-right {
-  display: flex;
-  gap: 15px;
-}
-
-.con-right a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-color: rgba(128, 128, 128, 0.485);
-  border-radius: 50px;
-  text-align: center;
-  line-height: 30px;
-}
-
-.con-right a i {
-  color: rgba(0, 0, 0, 0.541);
-}
-
-header {
-  padding: 20px 0;
-}
-
-.outer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  right: 8%;
-}
-
-.inner {
-  display: flex;
-  gap: 30px;
-}
-
-.inner > li {
-  list-style-type: none;
-}
-
-.inner li > a {
-  text-decoration: none;
-}
-
-/* Fix VILLA logo styling */
-.outer li span {
-  font-size: 2rem;
-  position: absolute;
-  left: 20%;
-  font-weight: bolder;
-}
-
-section {
-  margin: 3rem 0;
-}
-
-#properties {
-  background-image: url("https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-#properties .bg {
-  height: 100%;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.449);
-}
-
-.place {
-  position: absolute;
-  color: black;
-  top: 25vh;
-  left: 20vw;
-  background-color: white;
-  padding: 10px;
-  font-weight: 300;
-  font-size: 20px;
-}
-
-.place span {
-  color: orange;
-}
-
-.heading {
-  position: absolute;
-  left: 20vw;
-}
-
-.heading p {
-  font-size: 70px;
-  color: white;
-  font-weight: bold;
-}
-
-#details {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#details .image {
-  background-image: url("https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg");
-  width: 400px;
-  height: 500px;
-  background-position: left center;
-  background-size: cover;
-}
-
-.box-content a {
-  display: block;
-  padding: 10px 10px;
-  text-decoration: none;
-  color: black;
-  background-color: rgba(128, 128, 128, 0.223);
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.box-content {
-  margin-top: 6rem;
-}
-
-#left {
-  background-color: rgba(128, 128, 128, 0.203);
-  width: 50vh;
-  text-align: center;
-  display: grid;
-  gap: 5px 0;
-  padding: 20px 0;
-  line-height: 1.5;
-  border-radius: 10px;
-}
-
-#m2 {
-  position: relative;
-}
-
-/* Decorative underline for m2 h1 */
-#m2 h1::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 4px;
-  background-color: orange;
-  margin: 0 auto 10px auto;
-}
-
-#video-view {
-  background-image: url("https://images.pexels.com/photos/3293192/pexels-photo-3293192.jpeg");
-  background-size: cover;
-  background-position: center center;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(10);
-  overflow-x: hidden;
-}
-
-.bg-color {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.307);
-  position: absolute;
-}
-
-#content {
-  text-align: center;
-  margin-top: 30vh;
-  color: white;
-}
-
-#content span {
-  color: orange;
-  font-weight: bold;
-}
-
-.boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 250px);
-  gap: 30px;
-  justify-content: center;
-}
-
-.boxes .box {
-  height: 100px;
-  background-color: #ffe7e0c2;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-.textcontent p {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.box h1 {
-  color: rgb(255, 166, 0);
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-}
-
-.left-content p {
-  border-left: 5px solid orange;
-  color: orange;
-}
-
-.right-content {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 0 20px;
-}
-
-.right-content button {
-  padding: 15px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #1e1e1e;
-  color: white;
-  border-radius: 5px;
-  border: none;
-}
-
-.right-content #color {
-  background-color: orange;
-}
-
-.container1{
-  display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 30px;
-  padding: 30px;
-}
-
-.info-table {
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
-}
-
-.info-table ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.info-table li{
-  display: block;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-  font-size: 15px;
-  color: #aaa;
-  font-weight: 400;
-}
-
-.info-table li span{
-  font-size: 20px;
-  color: #1e1e1e;
-  font-weight: 700;
-  float: right;
-  display: inline-block;
-}
-
-.container1 .box2{
-  background-image: url('https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg');
-  background-position: center center;
-  background-size: cover;
-}
-
-.box3{
-  background-color: #aaaaaa7b;
-  padding: 40px;
-}
-
-.box3 h4{
-  margin-bottom: 30px;
-}
-
-.sch-btn button{
-  padding: 10px 20px;
-  border: none;
-  background-color: orange;
-  color: white;
-  border-radius: 20px;
-  margin-top: 30px;
-  font-size: 20px;
-  cursor: pointer;
-  word-break: break-word; /* fixed */
-}
-
-.heading3{
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.heading3 p{
-  display: inline-block;
-  border-left: 5px solid orange;
-  margin-bottom: 30px;
-}
-
-.cards .card{
-  background-color: #fafafa;
-  border-radius: 10px;
-  padding: 30px;
-  margin-bottom: 30px;    
-}
-
-.cards{
-  display: grid;
-  grid-template-columns: repeat(3,400px);
-  gap: 30px;
-  justify-content: center;
-}
-
-.card img{
-  width: 100%;
-  height: 250px;
-  background-position: center center;
-  background-size: cover;
-  border-radius: 20px;
-}
-
-.card #villa{
-  background-color: #fbd9cf;
-  font-weight: 500;
-  border-radius: 5px;
-  font-size: 14px;
-  color: #1e1e1e;
-  padding: 5px 12px;
-  display: inline-block;
-  margin-top: 25px;
-}
-
-.card h6{
-  font-size: 20px;
-  color: #f35525;
-  margin-top: 30px;
-  display: inline-block;
-  float: right;
-}
-
-.card h4{
-  font-size: 19px;
-  margin: 25px 0px;
-}
-
-.card h4 a{
-  text-decoration: none;
-  color: black;
-}
-
-.card ul{
-  border-bottom: 1px solid #eaeaea;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-.card .visit-btn{
-  text-align: center;
-}
-
-.card .visit-btn a{
-  text-decoration: none;
-  background-color: black;
-  padding: 10px 20px;
-  color: white;
-  border-radius: 20px;
-}
-
-#contact-section{
-  background-image: url('https://images.pexels.com/photos/2956511/pexels-photo-2956511.jpeg');
-  width: 100vw;
-  height: 110vh;
-  background-position: center center;
-  background-size: cover;
-  min-height: 60vh; /* ensure visibility */
-}
-
-.container3{
-  text-align: center;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.top-content p{
-  margin: 30px 0 30px 0;
-}
-
-.top-content h2{
-  font-size: 40px;
-}
-
-.contactUs-content{
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.form{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  overflow: visible;
-  margin-left: 30px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
-  padding: 35px 30px;
-  background-color: #fff;
-}
-
-.form label{
-  color: black;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.form input{
-  background-color: #aaaaaa3c;
-  border-radius: 20px;
-  border: none;
-  padding: 10px 20px;
-  color: black; /* fixed */
-}
-
-.form textarea{
-  margin-bottom: 10px;
-  color: black; /* fixed */
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.form .send{
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: white;
-  background-color: black;
-  font-size: 18px;
-}
-
-footer{
-  padding: 30px 0;
-  background-color: #1e1e1e;
-  color: white;
-}
-
-/* ========== MEDIA QUERIES ========== */
-
-@media (max-width: 1200px) {
   .container {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .container1 {
-    grid-template-columns: 1fr;
-  }
-
-  .form {
-    width: 50vw;
-    right: 20px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .outer {
-    flex-direction: column;
-    right: 0;
-  }
-
-  .inner {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  #details {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
     align-items: center;
   }
 
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .boxes {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .form {
-    position: static;
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  .maps {
-    position: static;
-    margin: 20px auto;
-    width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    margin: 0 20px;
-  }
-
-  .heading p {
-    font-size: 40px;
-  }
-
-  .boxes {
-    grid-template-columns: 1fr;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  #properties,
-  #video-view,
-  #contact-section {
-    height: auto;
-    padding: 60px 20px;
-  }
-
-  .content {
-    flex-direction: column;
+  .con-left > ul {
+    display: flex;
     gap: 20px;
-  }
-
-  .right-content {
-    flex-direction: column;
-  }
-
-  .right-content button {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .heading p {
-    font-size: 28px;
-  }
-
-  .place {
-    left: 10px;
-    top: 10vh;
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  .boxes,
-  .cards {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .box3 {
-    padding: 20px;
-  }
-
-  .form {
-    width: 95%;
+    list-style-type: none;
   }
 
   .con-right {
-    gap: 10px;
+    display: flex;
+    gap: 15px;
   }
 
   .con-right a {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.485);
+    border-radius: 50px;
+    text-align: center;
+    line-height: 30px;
   }
+
+  .con-right a i {
+    color: rgba(0, 0, 0, 0.541);
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  .outer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: 8%;
+  }
+
+  .outer li{
+    list-style-type: none;
+  }
+
+  .inner {
+    display: flex;
+    gap: 30px;
+  }
+
+  .inner li {
+    list-style-type: none;
+
+  }
+
+  .inner li a {
+    text-decoration: none;
+    color: #1e1e1e;
+  }
+
+  /* Fix VILLA logo styling */
+  .outer li span {
+    font-size: 2rem;
+    position: absolute;
+    left: 20%;
+    font-weight: bolder;
+  }
+
+  section {
+    margin: 3rem 0;
+  }
+
+  #properties {
+    background-image: url("https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  #properties .bg {
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.449);
+  }
+
+  .place {
+    position: absolute;
+    color: black;
+    top: 25vh;
+    left: 20vw;
+    background-color: white;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .place span {
+    color: orange;
+  }
+
+  .heading {
+    position: absolute;
+    left: 20vw;
+  }
+
+  .heading p {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+  }
+
+  #details {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #details .image {
+    background-image: url("https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg");
+    width: 400px;
+    height: 500px;
+    background-position: left center;
+    background-size: cover;
+  }
+
+  .box-content a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.223);
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .box-content {
+    margin-top: 6rem;
+  }
+
+  #left {
+    background-color: rgba(128, 128, 128, 0.203);
+    width: 50vh;
+    text-align: center;
+    display: grid;
+    gap: 5px 0;
+    padding: 20px 0;
+    line-height: 1.5;
+    border-radius: 10px;
+  }
+
+  #m2 {
+    position: relative;
+  }
+
+  /* Decorative underline for m2 h1 */
+  #m2 h1::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: orange;
+    margin: 0 auto 10px auto;
+  }
+
+  #video-view {
+    background-image: url("https://images.pexels.com/photos/3293192/pexels-photo-3293192.jpeg");
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10);
+    overflow-x: hidden;
+  }
+
+  .bg-color {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.307);
+    position: absolute;
+  }
+
+  #content {
+    text-align: center;
+    margin-top: 30vh;
+    color: white;
+  }
+
+  #content span {
+    color: orange;
+    font-weight: bold;
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .boxes .box {
+    height: 100px;
+    background-color: #ffe7e0c2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .textcontent p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .box h1 {
+    color: rgb(255, 166, 0);
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .left-content p {
+    border-left: 5px solid orange;
+    color: orange;
+  }
+
+  .right-content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0 20px;
+  }
+
+  .right-content button {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .right-content #color {
+    background-color: orange;
+  }
+
+  .container1{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .info-table {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 35px 30px;
+  }
+
+  .info-table ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .info-table li{
+    display: block;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 15px;
+    color: #aaa;
+    font-weight: 400;
+  }
+
+  .info-table li span{
+    font-size: 20px;
+    color: #1e1e1e;
+    font-weight: 700;
+    float: right;
+    display: inline-block;
+  }
+
+  .container1 .box2{
+    background-image: url('https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg');
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .box3{
+    background-color: #aaaaaa7b;
+    padding: 40px;
+  }
+
+  .box3 h4{
+    margin-bottom: 30px;
+  }
+
+  .sch-btn button{
+    padding: 10px 20px;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    word-break: break-word; /* fixed */
+  }
+
+  .heading3{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .heading3 p{
+    display: inline-block;
+    border-left: 5px solid orange;
+    margin-bottom: 30px;
+  }
+
+  .cards .card{
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;    
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .card img{
+    width: 100%;
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .card #villa{
+    background-color: #fbd9cf;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1e1e1e;
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 25px;
+  }
+
+  .card h6{
+    font-size: 20px;
+    color: #f35525;
+    margin-top: 30px;
+    display: inline-block;
+    float: right;
+  }
+
+  .card h4{
+    font-size: 19px;
+    margin: 25px 0px;
+  }
+
+  .card h4 a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .card ul{
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .card .visit-btn{
+    text-align: center;
+  }
+
+  .card .visit-btn a{
+    text-decoration: none;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+  }
+
+#contact-section {
+  background-image: url('https://images.pexels.com/photos/2956511/pexels-photo-2956511.jpeg');
+  width: 100vw;
+  height: 105vh;
+  min-height: 60vh;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom:0;
+  /* padding-bottom: 50px;  <-- remove this */
 }
+
+  .container3{
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-content p{
+    margin: 30px 0  0;
+  }
+
+  .top-content h2{
+    font-size: 40px;
+  }
+
+  .contactUs-content{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px ;
+  }
+
+  .form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    overflow: visible;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+    padding: 35px 30px;
+    background-color: #fff;
+  }
+
+  .form label{
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .form input{
+    background-color: #aaaaaa3c;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 20px;
+    color: black; /* fixed */
+  }
+
+  .form textarea{
+    margin-bottom: 10px;
+    color: black; /* fixed */
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .form .send{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+  }
+
+  footer{
+    padding: 30px 0;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    position: static;
+    bottom: 0;
+    width: 100vw;
+  }
+
+  /* ========== MEDIA QUERIES ========== */
+
+  @media (max-width: 1200px) {
+    .container {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container1 {
+      grid-template-columns: 1fr;
+    }
+
+    .form {
+      width: 50vw;
+      right: 20px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .outer {
+      flex-direction: column;
+      right: 0;
+    }
+
+    .inner {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #details {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cards {
+      grid-template-columns: 1fr;
+    }
+
+    .boxes {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .form {
+      position: static;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .maps {
+      position: static;
+      margin: 20px auto;
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin: 0 20px;
+    }
+
+    .heading p {
+      font-size: 40px;
+    }
+
+    .boxes {
+      grid-template-columns: 1fr;
+    }
+
+    .cards {
+      grid-template-columns: 1fr;
+    }
+
+    #properties,
+    #video-view,
+    #contact-section {
+      height: auto;
+      padding: 60px 20px;
+    }
+
+    .content {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .right-content {
+      flex-direction: column;
+    }
+
+    .right-content button {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .heading p {
+      font-size: 28px;
+    }
+
+    .place {
+      left: 10px;
+      top: 10vh;
+      font-size: 16px;
+      padding: 8px;
+    }
+
+    .boxes,
+    .cards {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .box3 {
+      padding: 20px;
+    }
+
+    .form {
+      width: 95%;
+    }
+
+    .con-right {
+      gap: 10px;
+    }
+
+    .con-right a {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+    }
+  }
